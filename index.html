@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b6cff">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <title>My English Coach</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="app-header">
+    <h1>My English Coach</h1>
+    <button id="installBtn" class="ghost">Install</button>
+  </header>
+
+  <section class="controls">
+    <div class="control-row">
+      <input id="searchInput" type="search" placeholder="Search phrase, tag, or Korean…" aria-label="Search">
+    </div>
+    <div class="control-row">
+      <label>Voice speed
+        <input id="rateInput" type="range" min="0.6" max="1.2" step="0.05" value="0.85">
+        <span id="rateVal">0.85×</span>
+      </label>
+      <label class="ml8">
+        <input id="autoSpeak" type="checkbox" checked> Auto‑speak
+      </label>
+    </div>
+    <div id="tagBar" class="chips"></div>
+  </section>
+
+  <main id="cards" class="cards" aria-live="polite"></main>
+
+  <nav class="studybar">
+    <button id="studyBtn" class="primary">Study due</button>
+    <span id="dueInfo"></span>
+  </nav>
+
+  <template id="cardTmpl">
+    <article class="card">
+      <div class="card-head">
+        <h2 class="phrase"></h2>
+        <div class="actions">
+          <button class="speak" title="Speak">🔊</button>
+          <button class="star" title="Star">☆</button>
+          <button class="copy" title="Copy JSON">⎘</button>
+        </div>
+      </div>
+      <p class="translation"></p>
+      <div class="meta">
+        <span class="pill register"></span>
+        <span class="pill category"></span>
+      </div>
+      <div class="chips tags"></div>
+      <details>
+        <summary>Breakdown & examples</summary>
+        <ul class="breakdown"></ul>
+        <ul class="examples"></ul>
+        <pre class="analysis"></pre>
+      </details>
+      <div class="review">
+        <button class="again">Again</button>
+        <button class="good">Good</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
