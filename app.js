@@ -1,6 +1,6 @@
 // ===== Configuration =====
 const CONFIG = {
-  APPS_SCRIPT_LIST_URL: "https://script.google.com/macros/s/AKfycby7jNNklK8ADkb-vzLu-ERuybad8cnGVJOvXS24DBbCnCnSzLqITIlz-mefXbEBno2v0g/exec?mode=list",
+  APPS_SCRIPT_LIST_URL: "https://script.google.com/macros/s/AKfycbxihOi28mgECgCIL83PBXLmQzAQLKllFjHaODm4Kyev2GVUSgrDUuN8wQ59g7_FEwH_aQ/exec?mode=list",
   SHEET_ID: "1HoLTXsFVLIF9Q1dNLCK5aoOgQ8nECepHK4OmveNezzc",
   SHEET_NAME: "영어 회화 공부",
   VOICE_LANG: "en-US",
